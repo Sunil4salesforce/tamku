@@ -1,0 +1,5 @@
+<apex:page standardController="Lead">
+    <apex:pageBlock rendered="{!$ObjectType.Lead.accessible}">
+        <p>This text will display if you can see the Lead object.</p>
+    </apex:pageBlock>
+</apex:page>

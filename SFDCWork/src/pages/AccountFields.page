@@ -1,0 +1,9 @@
+<apex:page standardController="Account">
+
+    
+          
+              <apex:repeat value="{!$ObjectType.Account.FieldSets.New_Set}" var="fields">
+                  <apex:outputField value="{!Account[fields]}" /><br/> 
+              </apex:repeat>
+
+</apex:page>

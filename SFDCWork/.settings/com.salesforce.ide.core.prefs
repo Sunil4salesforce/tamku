@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+endpointApiVersion=38.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=login.salesforce.com
+httpsProtocol=true
+ideVersion=38.0
+keependpoint=false
+metadataFormatVersion=38.0
+namespacePrefix=
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE7808191829109263507
+readTimeout=400
+sessionId=
+username=ksunil08@thomsonreuters.com

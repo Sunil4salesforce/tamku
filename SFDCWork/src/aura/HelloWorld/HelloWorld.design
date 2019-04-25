@@ -1,0 +1,4 @@
+<design:component label="Hello World">
+    
+    <design:attribute name="whom" label="whom" description="who to say hello to" /> 
+</design:component>

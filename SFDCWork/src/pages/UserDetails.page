@@ -1,0 +1,10 @@
+<apex:page extensions="DemoController" standardcontroller="Account">
+  <apex:form >
+      <apex:pageblock >
+           <apex:outputtext label="User Id : " value="{!$User.Id}">
+           </apex:outputtext>
+           <apex:outputText label="Current User Name" value="{!$User.FirstName&' '&$User.LastName}">
+           </apex:outputText>
+       </apex:pageblock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,40 @@
+<apex:page controller="CurrencyController">
+  <style type="text/css">
+      .card {
+          float: left;
+          height: 60px;
+          width: 80px;
+          padding: 10px 10px 10px 10px;
+          text-align: center;
+          border: 1px solid black;
+          margin-right: 10px;
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          font-size: 14px;
+      }
+  </style>
+ 
+  <apex:form > 
+     <apex:pageBlock title="Currency Information" mode="read" >
+         <apex:pageBlockButtons location="top">  
+             <apex:CommandButton value="Show Latest Currencies" action="{!decodeCurrenciesAndBase}" /><br /><br />
+         </apex:pageBlockButtons>
+         <apex:pageBlockSection title="Curriencies latest rates" columns="4">
+             <apex:repeat value="{!CurrencyRates}" var="CurrencyKey">
+                <apex:outputText value="{!CurrencyKey}"/>: 
+                <apex:outputText value="{!CurrencyRates[CurrencyKey]}"/><br/>
+        	 </apex:repeat>
+         </apex:pageBlockSection>
+         <apex:pageBlockSection title="Base Rate" showHeader="true" columns="4">
+             <apex:outputLabel title="Base Currency" value=" Base Currency" />
+             <apex:outputText value="{!CurrencyBase}"/>
+         </apex:pageBlockSection>
+         <apex:pageBlockSection title="Conversion Date" showHeader="true" columns="4">
+             <apex:outputLabel title="Conversion Date" value=" Conversion Date" />
+             <apex:outputText value="{!CurrencyConversionDate}"/>
+         </apex:pageBlockSection>
+     </apex:pageBlock>
+  </apex:form>
+  
+</apex:page>

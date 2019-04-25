@@ -1,0 +1,42 @@
+<apex:page StandardController="Account">
+<apex:messages />
+<apex:form >
+
+    <apex:pageBlock title="Page Block">
+        
+        <apex:pageBlockButtons location="Bottom">
+        <apex:commandButton action="{!Save}" value="Save"/>
+        <apex:commandButton action="{!QuickSave}" value="Quick Save"/>
+        </apex:pageBlockButtons>
+        
+        <apex:pageBlockSection columns="1">
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.Counter__c}"/>
+            <apex:outputField value="{!Account.Industry}"/>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Name and Counter" />
+                <apex:outputText value="{!Account.Name}({!Account.Counter__c})"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Created Date"/>
+                
+                <apex:outputText value="{0,date,short}">              
+                    <apex:param value="{!Account.CreatedDate}"/>                
+                </apex:outputText>
+            </apex:pageBlockSectionItem>
+            
+            
+            <!-- Adding field set here-->
+            
+            <apex:repeat value="{!$ObjectType.Account.FieldSets.New_Set}" var="field">
+            <apex:inputField value="{!Account[field]}"/>
+            </apex:repeat>
+            
+            
+         </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+ 
+</apex:page>

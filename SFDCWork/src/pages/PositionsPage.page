@@ -1,0 +1,25 @@
+<apex:page controller="DesignationController">
+  <style type="text/css">
+      .card {
+          float: left;
+          height: 60px;
+          width: 80px;
+          padding: 10px 10px 10px 10px;
+          text-align: center;
+          border: 1px solid black;
+          margin-right: 10px;
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          font-size: 14px;
+      }
+  </style>
+  <br />
+  <h1 style="font-size:16px">Candidate Position Statements</h1>
+    <br /><br />
+  <apex:form > 
+      <apex:CommandButton value="Show Latest Positions" action="{!GetCandidatePositions}"/><br /><br />
+      <apex:outputText value="{!PositionsList12}" escape="false"></apex:outputText>
+  </apex:form>
+  
+</apex:page>
