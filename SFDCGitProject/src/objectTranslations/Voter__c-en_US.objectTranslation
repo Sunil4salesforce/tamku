@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Voter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Voters</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contacted(2016) --></label>
+        <name>Contacted_2016__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Contact Date --></label>
+        <name>Last_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address --></label>
+        <name>Mailing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Political Party --></label>
+        <name>Political_Party__c</name>
+        <picklistValues>
+            <masterLabel>BJP</masterLabel>
+            <translation><!-- BJP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSP</masterLabel>
+            <translation><!-- BSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congress</masterLabel>
+            <translation><!-- Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SP</masterLabel>
+            <translation><!-- SP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shiv Shena</masterLabel>
+            <translation><!-- Shiv Shena --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Precinct --></label>
+        <name>Precinct__c</name>
+        <relationshipLabel><!-- Voters --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

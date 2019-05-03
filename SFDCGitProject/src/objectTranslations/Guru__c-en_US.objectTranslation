@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Guru</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gurus</value>
+    </caseValues>
+    <fields>
+        <label><!-- CrossObjectGuru --></label>
+        <name>CrossObjectGuru__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>Level -1</masterLabel>
+            <translation><!-- Level -1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level -2</masterLabel>
+            <translation><!-- Level -2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level -3</masterLabel>
+            <translation><!-- Level -3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Middle Level --></label>
+        <name>Middle_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top Level --></label>
+        <name>Top_Level__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Middle Level --></label>
+        <name>Middle_Level</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Top Level --></label>
+        <name>Top_Level</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
